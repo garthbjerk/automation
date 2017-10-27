@@ -10,8 +10,13 @@
         <string>-f</string>
         <string>/Users/garthbjerk/automation/updatedb_script</string>
     </array>
-    <key>StandardOutPath</key>
-    <string>/tmp/test.stdout</string>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>06</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
     <key>StandardErrorPath</key>
     <string>/tmp/test.stderr</string>
 </dict>
