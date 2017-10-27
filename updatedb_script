@@ -1,0 +1,8 @@
+#!/usr/bin/expect -f
+
+spawn /Users/garthbjerk/automation/run_fab_update
+expect "What should the site.domain setting be?"
+send -- "garth.local:8000\r"
+expect "Set a new password for all accounts: "
+send -- "bogus\r"
+interact
