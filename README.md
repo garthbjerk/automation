@@ -1,13 +1,15 @@
 Run this once your launchd file is ready: `(sudo) cp com.kolonial.tech.updatedb.plist /Library/LaunchDaemons`
 
 To have the task run at a specific time (cron-esque):
-`<key>StartCalendarInterval</key>
+```
+<key>StartCalendarInterval</key>
 <dict>
     <key>Hour</key>
     <integer>10</integer>
     <key>Minute</key>
     <integer>37</integer>
-</dict>`
+</dict>
+```
 
 To load the task:
 `launchctl load -w /Library/LaunchDaemons/com.kolonial.tech.updatedb.plist`
